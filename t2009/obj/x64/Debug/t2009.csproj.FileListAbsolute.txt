@@ -1,0 +1,26 @@
+D:\Users\pc\source\repos\t2009\t2009\obj\x64\Debug\App.g.i.cs
+D:\Users\pc\source\repos\t2009\t2009\obj\x64\Debug\App.g.cs
+D:\Users\pc\source\repos\t2009\t2009\obj\x64\Debug\MainPage.g.i.cs
+D:\Users\pc\source\repos\t2009\t2009\obj\x64\Debug\MainPage.g.cs
+D:\Users\pc\source\repos\t2009\t2009\obj\x64\Debug\Page\Login.g.i.cs
+D:\Users\pc\source\repos\t2009\t2009\obj\x64\Debug\Page\Login.g.cs
+D:\Users\pc\source\repos\t2009\t2009\obj\x64\Debug\XamlTypeInfo.g.cs
+D:\Users\pc\source\repos\t2009\t2009\obj\x64\Debug\App.xaml
+D:\Users\pc\source\repos\t2009\t2009\obj\x64\Debug\MainPage.xaml
+D:\Users\pc\source\repos\t2009\t2009\obj\x64\Debug\Page\Login.xaml
+D:\Users\pc\source\repos\t2009\t2009\obj\x64\Debug\App.xbf
+D:\Users\pc\source\repos\t2009\t2009\obj\x64\Debug\MainPage.xbf
+D:\Users\pc\source\repos\t2009\t2009\obj\x64\Debug\Page\Login.xbf
+D:\Users\pc\source\repos\t2009\t2009\obj\x64\Debug\XamlSaveStateFile.xml
+D:\Users\pc\source\repos\t2009\t2009\obj\x64\Debug\Page\Add Contact.g.i.cs
+D:\Users\pc\source\repos\t2009\t2009\obj\x64\Debug\Page\Add Contact.g.cs
+D:\Users\pc\source\repos\t2009\t2009\obj\x64\Debug\Page\Add Contact.xaml
+D:\Users\pc\source\repos\t2009\t2009\obj\x64\Debug\Page\Add Contact.xbf
+D:\Users\pc\source\repos\t2009\t2009\obj\x64\Debug\Model\Navigation.g.i.cs
+D:\Users\pc\source\repos\t2009\t2009\obj\x64\Debug\Model\Navigation.g.cs
+D:\Users\pc\source\repos\t2009\t2009\obj\x64\Debug\Page\Seech Contact.g.i.cs
+D:\Users\pc\source\repos\t2009\t2009\obj\x64\Debug\Page\Seech Contact.g.cs
+D:\Users\pc\source\repos\t2009\t2009\obj\x64\Debug\Model\Navigation.xaml
+D:\Users\pc\source\repos\t2009\t2009\obj\x64\Debug\Page\Seech Contact.xaml
+D:\Users\pc\source\repos\t2009\t2009\obj\x64\Debug\Model\Navigation.xbf
+D:\Users\pc\source\repos\t2009\t2009\obj\x64\Debug\Page\Seech Contact.xbf
