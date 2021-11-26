@@ -8,55 +8,25 @@ using Windows.Storage;
 
 namespace t2009.Data
 {
-     public class DatabaseNavigation
+    class DatabaseMigration
     {
+        private static string _databaseFile = "mycontact.db";
         public static string _databasePath;
-        private static string _databaseName = "mynote.db";
-        private static string _createNoteTable = "CREATE TABLE IF NOT EXISTS notes " +
-            "(Id NVARCHAR(100) PRIMARY KEY," +
-            "Title NVARCHAR(255) NOT NULL," +
-            "Detail Text NOT NULL," +
-            "CreatedAt DateTime NULL)";
-        public async static void UpdateDabase()
+        private static string _createContactTable = "CREATE TABLE IF NOT EXISTS contacts " +
+            "(PhoneNumber NVARCHAR(100) PRIMARY KEY," +
+            "Name NVARCHAR(255) NOT NULL)";           
+        public async static void UpdateDatabase()
         {
-            await ApplicationData.Current.LocalFolder.CreateFileAsync(_databaseName, CreationCollisionOption.OpenIfExists);
-            _databasePath = Path.Combine(ApplicationData.Current.LocalFolder.Path, _databaseName);
-            using (SqliteConnection db = new SqliteConnection($"Filename={_databasePath}"))
+            //Tạo đường dẫn.
+            await ApplicationData.Current.LocalFolder.CreateFileAsync(_databaseFile, CreationCollisionOption.OpenIfExists);
+            _databasePath = Path.Combine(ApplicationData.Current.LocalFolder.Path, _databaseFile);
+            using (SqliteConnection cnn = new SqliteConnection($"Filename = {_databasePath}"))
             {
-                db.Open();
-                SqliteCommand createTableNote = new SqliteCommand(_createNoteTable, db);
-                createTableNote.ExecuteNonQuery();
+                cnn.Open();
+                SqliteCommand command = new SqliteCommand(_createContactTable, cnn);                
+                command.ExecuteNonQuery();
+                
             }
-            await GenerateData();
-        }
-
-        public async static Task GenerateData()
-        {
-            NoteModel noteModel = new NoteModel();
-            noteModel.ClearData();
-            noteModel.Save(new Note()
-            {
-                Id = Guid.NewGuid().ToString("N"),
-                Title = "Đưa con đi học",
-                Detail = "Dạy sớm đưa đi học",
-                CreatedAt = DateTime.Now
-            });
-            noteModel.Save(new Note()
-            {
-                Id = Guid.NewGuid().ToString("N"),
-                Title = "Tưới cây",
-                Detail = "Chăm cây",
-                CreatedAt = DateTime.Now
-            });
-            noteModel.Save(new Note()
-            {
-                Id = Guid.NewGuid().ToString("N"),
-                Title = "Dạy tiếng anh cho con",
-                Detail = "Dạy tiếng anh cho con",
-                CreatedAt = DateTime.Now
-            });
-        }
+        }       
     }
-}
-
 }
